@@ -3,11 +3,26 @@
 <html lang="en">
 	<head>
 		<title>B14zej</title>
-		<link rel="stylesheet" href="/scripts/b14_default.css">
+		<link rel="stylesheet" href="scripts/b14_default.css">
 		
+		<style>           
+            body.preload * {
+                -webkit-transition: none !important;
+                -moz-transition: none !important;
+                -ms-transition: none !important;
+                -o-transition: none !important;
+                transition: none !important;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+           function  removePreload(){
+                $("body").removeClass("preload");
+            }
+        </script>
 	</head>
 	
-	<body>
+	<body class="preload" onload=" removePreload()">
 		<div id="root">
 			<div class="navbox">
 				
