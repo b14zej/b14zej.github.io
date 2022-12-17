@@ -32,6 +32,16 @@ div {
 
 
 
+
+
+.avatar {
+	border-radius: 50%;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+
+
 div .navbox {
     box-sizing: border-box;
     display: flex;
