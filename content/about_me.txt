@@ -1,7 +1,10 @@
 <div class="stuff">
-	<h1>About Me</h1>
+	<div style="padding: 0 32px">
+		<h1>About Me</h1>
+	</div>
 	<hr/>
 	<div style="padding: 0 32px">
+		
 	</div>
 	<hr/>
 </div>
