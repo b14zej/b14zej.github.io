@@ -152,25 +152,34 @@ div .window {
     width: 100%;
     height: 100%;
     justify-content: center;
-    padding-left: 8px;
+    padding-left: 12px;
     overflow-y: scroll;
 }
 .contentStrip::-webkit-scrollbar {
-    width: 8px;
+    width: 12px;
 }
 .contentStrip::-webkit-scrollbar-track {
     background-color: #285c35;
 }
 .contentStrip::-webkit-scrollbar-thumb {
     background-color: #101010;
-    border: 1px solid;
+    border: 2px solid;
     border-color: #276e39;
 }
-.contentStrip .content {
+#content {
     width: 96%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1cm;
 }
-.content .blog {
-    display: inline;
+
+
+
+div .stuff {
+	background-color: #387a49;
+	border: 0;
+	border-radius: 22px;
+	padding: 10px 2px 36px;
 }
 
 
