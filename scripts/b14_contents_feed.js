@@ -1,7 +1,7 @@
 const contentDisplay = document.getElementById("content");
 
 function fetchDefaultContnt(){
-	var content = "content/_content.json";
+	var content = "https://raw.githubusercontent.com/b14zej/b14zej.github.io/main/content/_content.json";
 	
 	fetch(content)
 	.then(response => {
