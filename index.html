@@ -15,15 +15,17 @@
             }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-           function  removePreload(){
-                $("body").removeClass("preload");
-            }
-        </script>
+		<script>
+			function removePreload(){
+				$("body").removeClass("preload");
+			}
+		</script>
 	</head>
 	
-	<body class="preload" onload=" removePreload()">
+	<body class="preload" onload="removePreload()">
 		<div id="root">
+		
+		
 			<div class="navbox">
 				<div class="navbar">
 					<div id="logo" class="nav_content">
@@ -46,7 +48,7 @@
 							<a style="font-size:0;" href="https://github.com/b14zej">
 								<div style="position:relative;">
 									<img class="avatar" alt width="60" height="60" src="https://avatars.githubusercontent.com/u/120755309?v=4">
-									<input type="image" class="avatar_gitoverlay" style="opacity:0.3;" alt src="assets/github-mark.svg" onmouseover="this.style='opacity:0.85'" onmouseout="this.style='opacity:0.3'">
+									<input type="image" class="avatar_gitoverlay" style="opacity:0.3;" alt src="assets/github-mark.svg" onmouseover="this.style='opacity:0.95'" onmouseout="this.style='opacity:0.3'">
 								</div>
 							</a>
 						</div>
@@ -54,14 +56,23 @@
 				</div>
 			</div>
 			
+			
+			
+			
+			
 			<div class="window">
 				<div class="contentStrip">
-					<div class="content">
-						<div>
-						</div>
+					<div id="content">
+						
 					</div>
+					
+					<script src="scripts/b14_contents_feed.js"></script>
 				</div>
 			</div>
+			
+			
+			
+			
 			
 			<div class="footer">
 				<div class="footer_content">
@@ -73,6 +84,8 @@
 					</div>
 				</div>
 			</div>
+		
+		
 		</div>
 	</body
 </html>
