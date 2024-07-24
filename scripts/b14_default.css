@@ -2,32 +2,35 @@
 
 
 body {
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    color: #c5c5c5;
-    background-color: #1b3b23;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: #c5c5c5;
+        background-color: #1b3b23;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
 }
 
 div {
-    display: block;
+        display: block;
+}
+
+hr {
+        border-top: 1px solid #c5c5c5;
 }
 
 
-
 #root {
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
 }
 
 
@@ -35,99 +38,113 @@ div {
 
 
 .avatar {
-	height:auto;
-	border-radius: 50%;
-	overflow: hidden;
-	vertical-align: middle;
+        height:auto;
+        border-radius: 50%;
+        overflow: hidden;
+        vertical-align: middle;
 }
 
 .avatar_gitoverlay {
-	width:60px;
-	height:60px;
-	border: 0;
-	position:absolute;
-	left:0;
+        width:60px;
+        height:60px;
+        border:0;
+        position:absolute;
+        left:0;
+        top:0;
 }
 
 
 
 div .navbox {
-    box-sizing: border-box;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-color: #101010;
-    width: 100%;
-    z-index: 2048;
+        box-sizing: border-box;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        background-color: #101010;
+        width: 100%;
+        min-height: 80px;
+        max-height: 80px;
+        z-index: 2048;
 }
 .navbox .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
-    height: 80px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 8px;
+        width: 100%;
+        height: 80px;
 }
 
 
 
 .navbar .nav_content {
-	display: flex;
-	min-width: 225px;
-}
-
-#logo {
-	align-items: center;
+        display: flex;
+        flex: 1;
 }
 
 #main {
-	align-items: center;
-	justify-content: center;
+        align-items: center;
+}
+
+#logo {
+        align-items: center;
+        justify-content: center;
+        min-width: 320px;
+        flex: 0;
 }
 
 #tool {
-	align-items: center;
-	justify-content: flex-end;
+        align-items: center;
+        justify-content: flex-end;
 }
 
+@media only screen and (max-width: 530px) {
+        #main { flex: 0; }
+        #logo { flex: 1; }
+        #tool { display: none; }
+}
 
+@media only screen and (max-width: 380px) { #main {
+        display: none;
+}}
 
 .nav_btn {
-	background: none;
-	height:auto;
-	cursor: pointer;
-	text-align: left;
+        background: none;
+        height:auto;
+        cursor: pointer;
+        text-align: left;
 }
 
 .guide_frame {
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	width:60px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:60px;
 }
 
 .btn_guide {
-	background-color: #101010;
-	border: 0.5mm solid #242424;
-	border-radius: 50%;
-	color: #c5c5c5;
-	width: 50px;
-	height: 50px;
-	text-align: center;
-    font-size: 12px;
+        background-color: #101010;
+        border: 0.5mm solid #242424;
+        border-radius: 50%;
+        color: #c5c5c5;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 12px;
 }
 .btn_guide:hover {
-	background-color: #242424;
-	color: #00f000;
-	width: 53px;
-	height: 53px;
-    font-size: 13px;
+        background-color: #242424;
+        color: #00f000;
+        width: 53px;
+        height: 53px;
+        font-size: 13px;
 }
 .btn_guide:active {
-	background-color: #343434;
-	width: 50px;
-	height: 50px;
-	text-align: center;
+        background-color: #343434;
+        width: 50px;
+        height: 50px;
+        text-align: center;
 }
 
 
@@ -136,50 +153,67 @@ div .navbox {
 
 
 div .window {
-    box-sizing: border-box;
-    display: inline-flex;
-    margin: 0 auto;
-    justify-content: flex-start;
-    background-color: #276e39;
-    max-width: 1260px;   
-    width: 85%;
-    height: 100%;
-    padding: 80px 0 25px;
-    z-index: 1024;
+        box-sizing: border-box;
+        display: inline-flex;
+        margin: 0 auto;
+        justify-content: flex-start;
+        background-color: #276e39;
+        max-width: 1024px;
+        width: 85%;
+        height: 100%;
+        padding: 80px 0 25px;
+        z-index: 1024;
 }
 .window .contentStrip {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    padding-left: 12px;
-    overflow-y: scroll;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        padding: 0 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-gutter: stable both-edges;
 }
+
+/*      Mozilla is dumb a times */
+@-moz-document url-prefix() { .window .contentStrip {
+        padding: 0 16px;
+        scrollbar-gutter: unset;
+        scrollbar-width: thin;
+
+        scrollbar-color:  #101010 #285c35;
+}}
+
+/*      Cool scrollbar for Chrome based browsers */
 .contentStrip::-webkit-scrollbar {
-    width: 12px;
+        width: 12px;
 }
 .contentStrip::-webkit-scrollbar-track {
-    background-color: #285c35;
+        background-color: #285c35;
 }
 .contentStrip::-webkit-scrollbar-thumb {
-    background-color: #101010;
-    border: 2px solid;
-    border-color: #276e39;
+        background-color: #101010;
+        border: 2px solid;
+
+        border-color: #276e39;
 }
+
+
 #content {
-    width: 96%;
-	display: flex;
-	flex-direction: column;
-	row-gap: 1cm;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 64px;
+        row-gap: 1cm;
 }
 
 
 
 div .stuff {
-	background-color: #387a49;
-	border: 0;
-	border-radius: 22px;
-	padding: 10px 0 36px;
+        background-color: #387a49;
+        border: 0;
+        border-radius: 22px;
+        padding: 10px 0 36px;
 }
 
 
@@ -187,31 +221,34 @@ div .stuff {
 
 
 div .footer {
-    position: absolute;
-    bottom: 0;
-    height: 25px;
-    width: 100%;
-    background-color: #101010;
-    border: 1px solid;
-    border-color: #161616;
-    z-index: 2048;
+        position: absolute;
+        bottom: 0;
+        height: 25px;
+        width: 100%;
+        background-color: #101010;
+        border: 1px solid;
+        border-color: #161616;
+        z-index: 2048;
 }
 .footer .footer_content{
-    display: flex;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    justify-content: flex-end;
-    font-size: 12px;
+        display: flex;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        justify-content: flex-end;
+        font-size: 12px;
 }
 .footer_content .copyright {
-    margin: auto;
-    margin-left: 5px;
-    color: #5f5f5f;
+        margin: auto;
+        margin-left: 5px;
+        color: #5f5f5f;
 }
+@media only screen and (max-width: 364px) { .copyright {
+        display: none;
+}}
 .footer_content .contact {
-    margin: auto;
-    margin-right: 42px;
-    color: #999999;
+        margin: auto;
+        margin-right: 2%;
+        color: #999999;
 }

@@ -23,25 +23,48 @@
 	</head>
 	
 	<body class="preload" onload="removePreload()">
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+			import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+			  apiKey: "AIzaSyDfjHVNC95knbN0IGMrMvyIQFtiFh3ShI0",
+			  authDomain: "site-database-b14zej.firebaseapp.com",
+			  projectId: "site-database-b14zej",
+			  storageBucket: "site-database-b14zej.appspot.com",
+			  messagingSenderId: "437185704554",
+			  appId: "1:437185704554:web:c319b0ce97a066ce6e9013",
+			  measurementId: "G-ES9SMPYP12"
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
 		<div id="root">
-		
+
 		
 			<div class="navbox">
 				<div class="navbar">
-					<div id="logo" class="nav_content">
-						<div class="guide_frame" style="visibility: hidden;">
+					<div id="main" class="nav_content">
+						<div class="guide_frame">
 							<button class="nav_btn btn_guide">
 								<img style="width:32px;height:auto;overflow:hidden;vertical-align:middle;" alt src="assets/guide_icon.svg">
 							</button>
 						</div>
 					</div>
 					
-					<div id="main" class="nav_content">
+					<div id="logo" class="nav_content">
 						<h2>b14zej's <img style="width:32px;height:auto;overflow:hidden;vertical-align:text-bottom;" alt src="assets/missing_T.png">esting Grounds</h2>
 					</div>
 					
 					<div id="tool" class="nav_content">
-						<div style="visibility: hidden;">
+						<div style="display: none;">
 							<h2>b14zej</h2>
 						</div>
 						<div>
@@ -62,10 +85,7 @@
 			
 			<div class="window">
 				<div class="contentStrip">
-					<div id="content">
-						
-					</div>
-					
+					<div id="content"></div>
 					<script src="scripts/b14_contents_feed.js"></script>
 				</div>
 			</div>
@@ -77,15 +97,15 @@
 			<div class="footer">
 				<div class="footer_content">
 					<div class="copyright">
-						&copy;Copyright 2022 Błażej Kwaśniak
+						&copy;Copyright 2024 Błażej Kwaśniak
 					</div>
 					<div class="contact">
-						Contact: <a href="mailto:blazej_kwas@pm.me" style="color:#00A84E;">blazej_kwas@pm.me</a>
+						Contact: <a href="mailto:b14zej@pm.me" style="color:#00A84E;">b14zej@pm.me</a>
 					</div>
 				</div>
 			</div>
 		
 		
 		</div>
-	</body
+	</body>
 </html>

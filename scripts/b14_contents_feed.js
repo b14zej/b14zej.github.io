@@ -37,7 +37,7 @@ function createSpace(id){
 }
 
 function updateContent(id, content){
-	document.getElementById(id).innerHTML = content;
+	document.getElementById(id).innerHTML = "<div class='stuff'>"+content+"</div>";
 }
 
 

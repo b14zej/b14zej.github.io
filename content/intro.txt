@@ -1,18 +1,16 @@
-<div class="stuff" style="margin: 2cm 0 0">
-	<div style="padding: 0 32px">
-		<h1>Hello there,</h1>
-	</div>
-	<hr/>
-	<div style="padding: 0 32px">
-		<div style="color:#609d70;font-size:12px;">
-			welcome to my little corner of the Internet. As of: 21st of DEC 2022
-		</div>
-		<p>
-			I'm Błażej Kwaśniak (b14zej) and this is my webpage. There ain't much here, but (<i>maybe</i>) one day there could be something cool to look at. <br>
-			Until then, I hope you have a good day, and...<br><br>
-			I hope you come again.		
-		</p>
-		<h3><a href="http://o7.urbanup.com/11846803">o7</a></h3>
-	</div>
-	<hr/>
+<div style="padding: 0 32px">
+        <h1>Hello there,</h1>
 </div>
+<hr/>
+<div style="padding: 0 32px">
+        <div style="color:#609d70;font-size:12px;">
+                welcome to my little corner of the Internet. As of: 21st of DEC 2022
+        </div>
+        <p>
+                I'm Błażej Kwaśniak (b14zej) and this is my webpage. There ain't much here, but (<i>maybe</i>) one day there could be something cool to look at. <br>
+                Until then, I hope you have a good day, and...<br><br>
+                I hope you come again.
+        </p>
+        <h3><a href="http://o7.urbanup.com/11846803">o7</a></h3>
+</div>
+<hr/>
