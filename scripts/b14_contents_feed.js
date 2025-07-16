@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const contentDisplay = document.getElementById("content");
 
 function fetchDefaultContnt(){
